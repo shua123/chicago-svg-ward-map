@@ -26,7 +26,7 @@ function draw_tooltip_map(){
   var tooltip_ward_map = $K.map('#tooltip-map');
   
   // load the SVG file
-  tooltip_ward_map.loadMap('img/combined-n.svg', function(){
+  tooltip_ward_map.loadMap('img/combined.svg', function(){
 
     // add the map layer
     tooltip_ward_map.addLayer('chicago');
@@ -40,7 +40,8 @@ function draw_tooltip_map(){
       var path = layer.getPaths({ward: ward});
       var node = path[0].svgPath.node;
       jQuery.data(node,"signups", ward_data[path[0].data.ward]);
-      jQuery.data(node,"ward", path[0].data.ward);    
+      jQuery.data(node,"ward", path[0].data.ward);
+      jQuery.data(node,"displaynam", path[0].data.displaynam);    
     }
 
     // same code as the heat map
