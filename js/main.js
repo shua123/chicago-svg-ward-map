@@ -77,7 +77,7 @@ function draw_tooltip_map(){
         container: 'body', 
         animation: false, 
         placement: 'left', 
-        title:     "Ward " + $.data(obj,'ward') + ": " +  
+        title:     "" + $.data(obj,'displaynam') + ": " +  
                    (number_of_signups || '0') + " tester" + 
                    (number_of_signups == 1 ? '' : 's') 
       });
