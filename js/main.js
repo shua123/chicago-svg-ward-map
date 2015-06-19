@@ -26,7 +26,7 @@ function draw_tooltip_map(){
   var tooltip_ward_map = $K.map('#tooltip-map');
   
   // load the SVG file
-  tooltip_ward_map.loadMap('img/combined.svg', function(){
+  tooltip_ward_map.loadMap('img/combined-n.svg', function(){
 
     // add the map layer
     tooltip_ward_map.addLayer('chicago');
