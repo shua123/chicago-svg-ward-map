@@ -33,7 +33,7 @@ function draw_map_with_styles(){
   var styled_ward_map = $K.map('#styled-ward-map');
   
   // load the SVG file
-  styled_ward_map.loadMap('img/wards.svg', function(){
+  styled_ward_map.loadMap('img/combined-n.svg', function(){
 
     // add the map layer
     styled_ward_map.addLayer('chicago', {
@@ -62,7 +62,7 @@ function draw_heat_map(){
   var heat_map = $K.map('#heat-map');
   
   // load the SVG file
-  heat_map.loadMap('img/wards.svg', function(){
+  heat_map.loadMap('img/combined-n.svg', function(){
 
     // add the map layer
     heat_map.addLayer('chicago');
@@ -96,7 +96,7 @@ function draw_tooltip_map(){
   var tooltip_ward_map = $K.map('#tooltip-map');
   
   // load the SVG file
-  tooltip_ward_map.loadMap('img/wards.svg', function(){
+  tooltip_ward_map.loadMap('img/combined-n.svg', function(){
 
     // add the map layer
     tooltip_ward_map.addLayer('chicago');
