@@ -48,7 +48,7 @@ function draw_tooltip_map(){
     tooltip_ward_map.getLayer('chicago').style({
       fill: function(d){ 
         if(ward_data[d.ward] == 0){
-            return "#fff";
+            return "#ccc";
           } else {
             return color_for_value(ward_data[d.ward], ward_data);
           }
