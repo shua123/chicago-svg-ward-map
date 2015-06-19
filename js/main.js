@@ -20,7 +20,7 @@ function draw_simple_map(){
   var simple_ward_map = $K.map('#simple-ward-map');
   
   // load the SVG file
-  simple_ward_map.loadMap('img/wards.svg', function(){
+  simple_ward_map.loadMap('img/combined-n.svg', function(){
 
     // add the map layer
     simple_ward_map.addLayer('chicago');
